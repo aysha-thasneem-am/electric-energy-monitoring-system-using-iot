@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Registration</h2>
+	<form method="post">
+
+		<table border="2">
+			<tr>
+		      <th>Name</th>
+		      <th>Address</th>
+                <th>Email</th>
+                <th>Phone no</th>
+                <th>Gender</th>
+		    </tr>
+            {% for obj in objval %}
+
+		    <tr>
+		    	<td> {{ obj.name }} </td>
+		    	<td>    {{ obj.address }}  </td>
+                <td>  {{ obj.email}}    </td>
+		    	<td> {{ obj.phone_no }}     </td>
+                <td>   {{ obj.gender }}   </td>
+		    </tr>
+            {% endfor %}
+
+
+
+		</table>
+	</form>
+</body>
+</html>

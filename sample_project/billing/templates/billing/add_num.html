@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post">
+    {% csrf_token %}
+    Number 1:
+    <input type="text" name="bno"><br>
+    Number 2:
+    <input type="text" name="pdate"><br>
+
+    <input type="submit" name="submit" value="submit">
+</form>
+{% if sum %}
+sum={{ sum }}
+{% endif %}
+
+</body>
+</html>
